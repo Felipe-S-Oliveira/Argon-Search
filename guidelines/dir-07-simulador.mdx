@@ -1,0 +1,34 @@
+---
+id: dir-07
+title: Diretriz 07 — Simulador de Multa Proporcional Anatel e Economia
+shortcut: 07. Simulador Anatel
+category: simuladores
+categoryLabel: Simuladores
+breadcrumb: argon.internal › diretrizes › simulador-anatel
+readingTime: Ferramenta Interativa
+description: Calculadora em tempo real baseada na Resolução 632/Anatel para calcular a multa rescisória proporcional do concorrente e provar o lucro na migração.
+keywords: ["simulador", "calculadora", "multa", "anatel", "fidelidade", "proporcional", "calculo", "economia"]
+---
+
+<Badges>
+  <Badge type="primary">Ferramenta em Tempo Real</Badge>
+  <Badge type="success">Resolução 632 Anatel</Badge>
+</Badges>
+
+# Diretriz 07 — Simulador de Multa Proporcional Anatel e Economia
+
+<Lead>Use esta calculadora durante a ligação quando o cliente informar que ainda possui meses restantes de fidelidade na operadora atual.</Lead>
+
+<Alert type="regulatory" title="Base Legal — Art. 58 da Resolução 632/2014 da Anatel">
+A multa por quebra de fidelidade jamais pode ser cobrada de forma integral após o 1º mês. A fórmula legal é: `(Valor Total do Benefício ÷ 12 meses) × Meses Restantes do Contrato`.
+</Alert>
+
+## 1. Calculadora Interativa de Migração
+
+<AnatelCalculator />
+
+## 2. Script para Verbalizar o Resultado do Cálculo ao Cliente
+
+<ScriptBox title="Argumentação Matemática Irrefutável">
+**{Nome do Cliente}**, acabei de calcular aqui pela regra oficial da Anatel! Como faltam apenas **{Meses} meses** para encerrar seu contrato lá, a sua multa proporcional hoje é de apenas **R$ {Multa Proporcional}**. Em compensação, mudando para a Argon hoje, você economiza **R$ {Economia Anual}** no ano! Ou seja: mesmo quitando essa taxa residual, você ainda termina com **R$ {Saldo Líquido} de lucro líquido no bolso** e já navega com Wi-Fi 6 a partir desta semana!
+</ScriptBox>

@@ -1,0 +1,40 @@
+---
+id: dir-02
+title: Diretriz 02 — Validação Positiva Anatel e Conformidade LGPD
+shortcut: 02. Validação LGPD
+category: regulatorio
+categoryLabel: Regulatório
+breadcrumb: argon.internal › diretrizes › validacao-lgpd
+readingTime: 2 min de leitura
+description: Procedimento obrigatório de segurança da informação (Lei 13.709/18) e confirmação de 3 dados cadastrais positivos antes de gerar ordem de serviço.
+keywords: ["lgpd", "cpf", "dados", "seguranca", "anatel", "validacao", "auditoria", "nota zero"]
+---
+
+<Badges>
+  <Badge type="warning">Obrigatório Auditoria</Badge>
+  <Badge type="neutral">⏱ 2 min de leitura</Badge>
+</Badges>
+
+# Diretriz 02 — Validação Positiva Anatel e Conformidade LGPD
+
+<Lead>Garanta 100% de conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e evite Nota Zero Crítica na monitoria de qualidade.</Lead>
+
+<Alert type="critical" title="Proibição Absoluta (Nota Zero em Qualidade)">
+É terminantemente **PROIBIDO ditar o CPF, RG ou data de nascimento** para o cliente apenas confirmar com *"Sim"*. Os dados devem ser verbalizados integralmente pelo titular da linha.
+</Alert>
+
+## 1. Os 3 Pilares de Confirmação Positiva
+
+- **Nome Completo e Filiação:** O titular deve confirmar nome completo e primeiro nome da mãe.
+- **Documento Oficial (CPF):** Solicite que o cliente dite os números do CPF para consulta de viabilidade no CRM (<kbd>Alt</kbd> + <kbd>C</kbd>).
+- **Data de Nascimento e CEP:** Confirmação cruzada com a base da Receita Federal integrada ao sistema.
+
+## 2. Script de Transição Segura para Coleta de Dados
+
+<ScriptBox title="Solicitação Natural de CPF (Sem Gerar Resistência)">
+**{Nome do Cliente}**, para eu vincular o desconto de portabilidade diretamente no sistema da Anatel e garantir que nenhum outro morador utilize a vaga da sua caixa óptica, pode me confirmar os números do seu CPF e sua data de nascimento, por gentileza?
+</ScriptBox>
+
+<Alert type="regulatory" title="Diretriz Regulatória Anatel — Art. 42">
+Todos os dados coletados durante a chamada são criptografados no CRM Argon e utilizados exclusivamente para análise de crédito, faturamento e emissão do contrato digital.
+</Alert>
